@@ -1,0 +1,17 @@
+# Local application resources and rollback files must never be published.
+node_modules/
+backups/
+*.log
+*.tgz
+*.vsix
+*.exe
+*.zip
+*.lnk
+*.tmp
+*.before-*.js
+*.before-*.json
+*-result.json
+scripts/glass.before-*.js
+scripts/product.before-*.json
+.env
+.env.*
