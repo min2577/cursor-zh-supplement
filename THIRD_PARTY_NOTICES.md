@@ -12,4 +12,4 @@ Cursor 是 Anysphere 的产品。本仓库不分发 Cursor 二进制、完整应
 - 本机验证所用版本：1.1.1。
 - 上游声明许可：MIT；其工作台翻译来源及 NOTICE 以其仓库为准。
 
-本仓库未复制其完整语言包、安装器或翻译词库。需要用户从上游独立获取并遵守其许可。
+一键包内附 npm 发布的 `@polang233/cursor-language-pack` 1.1.1 原始压缩包，来源为 `https://registry.npmjs.org/@polang233/cursor-language-pack/-/cursor-language-pack-1.1.1.tgz`。保留许可证 `vendor/UPSTREAM-LICENSE.txt` 与包含 Microsoft 翻译许可的 `vendor/UPSTREAM-NOTICE.txt`；压缩包内也保留原声明。`vendor/SHA256.txt` 用于核验打包内容。

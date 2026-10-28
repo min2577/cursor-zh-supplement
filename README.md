@@ -1,5 +1,20 @@
 # Cursor 中文漏译补充脚本
 
+## 不想敲命令：下载一键汉化包
+
+前往 [Releases 下载页](https://github.com/min2577/cursor-zh-supplement/releases/latest)，下载 `Cursor-Chinese-OneClick-Windows-3.27.14.zip`，**完整解压后双击 `Start-Chinese.cmd`**。
+
+- 需要已安装 Windows Cursor **3.27.14**，其他版本会停止并提示不兼容。
+- 自动查找常见安装位置；自定义位置可将 `Cursor.exe` 拖到 `Start-Chinese.cmd` 上。
+- 内置上游 1.1.1 中文语言包，无须手动下载，也无须另装 Node.js；使用 Cursor 自带的运行时。
+- 正常关闭 Cursor（不会强杀），复制约 1 GB 到用户目录，自动安装语言包、补齐漏译、检查资源校验，并创建桌面“Cursor 中文版”。需要预留至少 2 GB 空间。
+- 原安装保留；现有语言扩展会按上游规则替换，账号、聊天、项目和用户设置由同一份 Cursor 用户数据继续使用。
+- 若有未保存文件，请先保存；若进程未退出，工具停止而不会强制结束。首次启动可能需等待一两分钟。
+- 回退：关闭中文版，从原安装入口启动；语言仍可通过 Configure Display Language 切换。中文版目录的 `ChineseSetup` 保存本次补充的备份及安装记录，上游备份仍位于用户 `.cursor/cursor-language-pack`。
+- 重复运行会创建新的独立副本，占用额外空间；已成功安装就直接使用桌面入口。
+
+这个包安装的是中文界面，**不包含 Cursor 程序本体**，也不会购买套餐或改变模型权限。
+
 为 Windows 上的 Cursor **3.27.14** 补齐首页和设置中的部分英文文案。
 
 这份仓库保存实际使用过的两个补充脚本，并将本机绝对路径改为命令行参数。**它不是完整语言包**；使用前需要安装并应用上游 [polang233/cursor-language-pack](https://github.com/polang233/cursor-language-pack)。
@@ -48,7 +63,7 @@ node scripts/finish.mjs 'D:\Apps\Cursor\resources\app'
 
 ## 仓库内容
 
-只保存脚本和文档。不包含 Cursor 安装程序、应用资源、第三方包副本、个人日志、账号数据、凭据或本机备份。保留原安装作回退比把约 1 GB 程序上传 GitHub 更合适。
+保存脚本、文档与经校验的 MIT 上游语言包 1.1.1（vendor）。不包含 Cursor 安装程序、应用资源、个人日志、账号数据、凭据或本机备份。保留原安装作回退比把约 1 GB 程序上传 GitHub 更合适。
 
 ## 上游与边界
 
